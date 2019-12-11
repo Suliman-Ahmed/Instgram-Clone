@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353372004358",
+    "firebase_url": "https://instgram-clone-98b66.firebaseio.com",
+    "project_id": "instgram-clone-98b66",
+    "storage_bucket": "instgram-clone-98b66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353372004358:android:5ebd04d75b77cac0fae387",
+        "android_client_info": {
+          "package_name": "com.suliman.instgram_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353372004358-9na8gjmosmrj5n3l7kvsgc7907g3cm5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZULrCtZ5HL6U8fd1Q7obGHqvh8Amgxh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353372004358-9na8gjmosmrj5n3l7kvsgc7907g3cm5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
