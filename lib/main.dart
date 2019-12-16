@@ -28,6 +28,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Instgram Clone',
+      theme: ThemeData(
+        primaryIconTheme: Theme.of(context).primaryIconTheme.copyWith(
+          color: Colors.black
+        )
+      ),
       debugShowCheckedModeBanner: false,
       home: _getScreenID(),
       routes: {

@@ -22,7 +22,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _pageController = PageController();
   }
@@ -30,17 +29,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // App Bar
-      appBar: AppBar(
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        title: Text('Instgram',
-            style: TextStyle(
-              color: Colors.black,
-              fontFamily: 'Lobster',
-              fontSize: 35.0,
-            )),
-      ),
       // Body
       body: PageView(
         controller: _pageController,
@@ -92,13 +80,13 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.notifications,
+              Icons.favorite_border,
               size: 32.0,
             ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.account_circle,
+              Icons.person,
               size: 32.0,
             ),
           ),

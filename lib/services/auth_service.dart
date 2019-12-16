@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:instgram_firebase/Screens/feed_screen.dart';
-import 'package:instgram_firebase/Screens/home_screen.dart';
-import 'package:instgram_firebase/Screens/login_screen.dart';
 
 class AuthService {
   static final _auth = FirebaseAuth.instance;
@@ -20,27 +17,25 @@ class AuthService {
         _firestore
             .collection('/users')
             .document(signInUser.uid)
-            .setData({'name': name, 'email': email, 'imageUrl': ''});
+            .setData({'name': name, 'email': email, 'imageUrl': ""});
       } else {
         print('sign in user == null');
       }
-      Navigator.pushReplacementNamed(context, HomeScreen.id);
+      Navigator.pop(context);
     } catch (e) {
       print(e.toString());
     }
   }
 
-  static void logout(){
+  static void logout() {
     _auth.signOut();
   }
 
-  static void login(String email,String password){
+  static void login(String email, String password) {
     try {
-    _auth.signInWithEmailAndPassword(email: email,password: password);
-      
+      _auth.signInWithEmailAndPassword(email: email, password: password);
     } catch (e) {
       print(e);
     }
   }
-
 }
